@@ -47,7 +47,7 @@ function ProductForm() {
     setError(err);
 
     if (Object.keys(err).length == 0) {
-      alert(JSON.stringify(product))
+      alert(JSON.stringify(product, null, 2))
     }
   }
 
