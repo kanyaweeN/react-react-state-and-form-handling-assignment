@@ -45,6 +45,10 @@ function ProductForm() {
       err.email = "Email is required";
     }
     setError(err);
+
+    if (Object.keys(err).length == 0) {
+      alert(JSON.stringify(product))
+    }
   }
 
   return (
